@@ -1,0 +1,113 @@
+.classify {
+  background-color: #eee;
+}
+
+.classify .search-bar {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12);
+}
+
+.classify .search-box {
+  height: 44px;
+  padding: 0 59px 0 50px;
+  background-color: #fafafa;
+  position: relative;
+  overflow: hidden;
+}
+
+.classify .search-box .back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 50px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #f41e33;
+}
+
+.classify .search-box .back i {
+  display: block;
+  line-height: inherit;
+  font-size: 20px;
+  text-indent: 10px;
+}
+
+.classify .search-box .bar {
+  height: 30px;
+  padding-left: 34px;
+  background-color: #fff;
+  margin-top: 6px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  position: relative;
+}
+
+.classify .search-box .bar i {
+  display: block;
+  width: 34px;
+  text-align: center;
+  font-size: 18px;
+  color: #898989;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.classify .search-box .bar input {
+  border: 0 none;
+  width: 100%;
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+
+.classify .search-box .search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 58px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  text-indent: 1px;
+}
+
+.classify .menugoods {
+  margin-top: 3px;
+}
+
+.classify .menugoods-box {
+  margin: 9px;
+}
+
+.classify .menugoods ul {
+  overflow: hidden;
+  padding-bottom: 1px;
+}
+
+.classify .menugoods ul li {
+  float: left;
+  width: 33.3333%;
+  border: #eee solid 1px;
+  margin: 0 -1px -1px 0;
+}
+
+.classify .menugoods ul li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 16px;
+  color: #666;
+}
+
+.classify .menugoods-box.bt {
+  margin-bottom: 0px;
+}
