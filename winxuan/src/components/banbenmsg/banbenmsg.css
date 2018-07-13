@@ -1,0 +1,17 @@
+.banben{
+    width: 100%;
+    padding: 0 23px;
+}
+
+.banben ul li b{
+    display: inline-block;
+    width: 57px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 37px;
+    font-weight: normal;
+}
+.banben ul li span a {
+    font-size: 14px;
+}
+

@@ -1,0 +1,222 @@
+.main {
+  padding-top: 44px;
+  position: relative;
+}
+
+.main .winxuan-hot {
+  background-color: #fff;
+  height: 42px;
+}
+.main .winxuan-hot .title-img {
+  float: left;
+  padding: 0 10px;
+  width: 87px;
+  height: 32px;
+  margin-top: 4px;
+  border-right: 1px solid #eee;
+  text-align: center;
+}
+.main .winxuan-hot .title-img img {
+  vertical-align: top;
+  width: 74px;
+}
+
+.winxuan-hot .weal {
+  float: right;
+  overflow: hidden;
+  position: relative;
+  top: 10px;
+  height: 42px;
+  padding-right: 5px;
+}
+
+.winxuan-hot .weal a {
+  color: #5c6467;
+}
+
+.winxuan-hot .weal span {
+  display: inline-block;
+  padding: 0 1px;
+  margin-right: 4px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #eee;
+  border-color: #ce1d38;
+  color: #ce1d38;
+  font-size: 16px;
+  border-radius: 15%;
+  vertical-align: baseline;
+  font-weight: bold;
+}
+
+.main .countdown {
+  position: relative;
+}
+
+.countdown .kill_more .line1 {
+  font-weight: 700;
+  height: 2px;
+  width: 102px;
+  background-color: #dedede;
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 27px;
+}
+
+.countdown .kill_more .line2 {
+  font-weight: 700;
+  height: 2px;
+  width: 48px;
+  background-color: #dedede;
+  display: block;
+  position: absolute;
+  left: 270px;
+  top: 27px;
+}
+
+.countdown .kill_more .time {
+  float: left;
+  margin-left: 131px;
+  margin-top: 13px;
+  font-size: 18px;
+  color: #f92438;
+}
+
+.countdown .kill_more .time .ico-clock {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+}
+
+.kill_more .time .timer {
+  overflow: hidden;
+  text-align: center;
+  margin-left: 16px;
+}
+
+.kill_more .time .timer span {
+  color: #222222;
+}
+
+.kill_more .time .timer .count-time {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #3d3d3d;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  margin: 0 3px;
+}
+
+.kill_more .more {
+  float: right;
+  font-size: 12px;
+  margin-right: 4px;
+  line-height: 57px;
+}
+
+.kill_more .more a {
+  color: #5c6467;
+}
+
+.kill_more .more i {
+  color: #ce1d38;
+}
+
+
+
+.main .nav-topic {
+  padding: 13px 7px 7px 7px;
+  background-color: #fff;
+  text-align: center;
+}
+.main .nav-topic .nav-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .nav-topic .nav-box a {
+  display: inline-block;
+  width: 20%;
+  margin-bottom: 13px;
+}
+
+.main .nav-topic .nav-box i {
+  display: block;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  margin: 0 auto;
+  line-height: 51px;
+  font-size: 34px;
+  color: #fff;
+}
+
+.main .nav-topic .nav-box span {
+  display: block;
+  height: 18px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #666;
+  font-size: 10px;
+}
+
+.main .foot-box {
+  overflow: hidden;
+  padding: 10px 0;
+  background-color: #524c60;
+}
+
+.main .foot-box .login-bottom {
+  min-height: 41px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.main .foot-box .login-bottom a {
+  display: inline-block;
+  height: 38px;
+  width: 92px;
+  line-height: 38px;
+  font-size: 16px;
+  color: #afb0b0;
+  border: .02rem solid #464053;
+  border-radius: 5px;
+  background-color: #595367;
+  margin: 0 14px;
+}
+
+.main .foot-box .copyright {
+  min-height: 41px;
+  margin-bottom: 5px;
+  line-height: 41px;
+  text-align: center;
+  font-size: 14px;
+  color: #afb0b0;
+}
+
+.main .foot-box .copyright span {
+  margin-right: 6px;
+  font-size: 14px;
+  vertical-align: middle;
+  color: #817e88;
+}
+
+/* 返回顶部 */
+.goTop{
+  width: 52px;
+  height: 52px;
+  text-align: center;
+  border: 1px solid #767676;
+  border-radius: 50%;
+  background: rgba(255,255,255,.7);
+  color: #333;
+  position: fixed;
+  bottom: 55px;
+  right: 10px;
+}

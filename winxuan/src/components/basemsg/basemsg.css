@@ -1,0 +1,193 @@
+.baseMsg{
+    width: 100%;
+    margin-top: -16px;
+    background: #eee;
+}
+
+.bm_img{
+    width: 100%;
+    height: 320px;
+    padding: 23px 0;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+
+.bm_img_list{
+    width: 100%;
+    height: 100%;
+}
+
+.bm_img_list li{
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.bm_img_list li img{
+    display: inline-block;
+    width: 272px;
+    height: 272px;
+    margin: 0 auto;
+}
+/* 商品基本信息 */
+.base_info{
+    width: 100%;
+    height: 170px;
+    padding: 7.5px 23px;
+    background: #fff;
+}
+.title {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 3px;
+}
+.sub-title{
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    color: #f41e33;
+}
+.price{
+    position: relative;
+}
+.price-n{
+    font-size: 14px;
+    color: #f41e33;
+    margin-right: 20px;
+}
+.price-n b{
+    font-size: 22px;
+    font-weight: 100;
+}
+.price-o{
+    font-size: 10px;
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 20px;
+}
+.z{
+    display: inline-block;
+    height: 12px;
+    line-height: 12px;
+    font-size: 10px;
+    padding: 0 3px;
+    color: #fff;
+    background-color: #fd5969;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-top: 2px;
+}
+.fenxiang {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    color: #f41e33;
+}
+.fenxiang i{
+    font-size: 30px;
+    font-weight: 900;
+}
+.author,.pub{
+    font-size: 10px;
+    line-height: 21px;
+    color: #999;
+}
+.author b{
+    font-weight: 600;
+}
+.author a {
+    font-size: 10px;
+    color: #1D66B2;
+}
+.pub a{
+    font-size: 10px;
+    color: #6a77b6;
+}
+/* 文轩现货 */
+.status{
+    width: 100%;
+    background: #fafafa;
+    border-top: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+}
+
+.status_title{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 23px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+.status_title i{
+    padding-right: 10px; 
+    color: #f41e33;
+}
+.status_title span{
+    padding-left: 20px;
+    color: #bbb;
+}
+.sale_list{
+    width: 100%;
+    padding: 0 23px;
+}
+.item{
+    width: 100%;
+    padding: 9px 0 0 50px;
+    position: relative;
+    font-size: 12px;
+}
+.item b{
+    display: inline-block;
+    width: 43px;
+    height: 15px;
+    line-height: 13px;
+    text-align: center;
+    font-size: 10px;
+    color: #f41e33;
+    border: 1px solid #f41e33;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+.item a{
+    font-size: 12px;
+    color: #6a77b6;
+}
+.price_msg,.ad_msg{
+    width: 100%;
+    padding: 0 23px;
+    background: #fff;
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+.price_msg b{
+    font-weight: normal;
+}
+.price_msg h4,.ad_msg h4{
+    font-size: 18px;
+}
+
+.count_wrapper{
+    width: 100%;
+    height: 53px;
+    padding: 11px 23px;
+    background: #fff;
+    margin-bottom: 6px;
+}
+.count_wrapper button{
+    width: 29px;
+    height: 29px;
+}
+.count_wrapper input{
+    width: 35px;
+    height: 29px;
+    text-align: center;
+    margin: 0 15px;
+    border-top: 1px solid #eee;
+    border-bottom:  1px solid #eee;
+}
