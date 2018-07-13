@@ -129,7 +129,7 @@ class Car extends Component {
           </div>
           <ul>
             {this.state.goods.map((item,index)=>{
-                return <li >
+                return <li key={index}>
                           <div className="main-box">
                     <label className="form-checkbox">
                       <input type="checkbox" checked={item.checked} onClick={this.checkOne.bind(this,item,index)} data-check={item.checked}/>
