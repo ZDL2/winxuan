@@ -3,6 +3,9 @@
     padding: 0 23px;
 }
 
+.banben ul li{
+    text-align: left;
+}
 .banben ul li b{
     display: inline-block;
     width: 57px;

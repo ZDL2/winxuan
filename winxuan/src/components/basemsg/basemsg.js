@@ -20,31 +20,26 @@ class Basemsg extends Component {
             let arr = res.data.data
             console.log(arr[0]);
             this.setState({
-                product: arr[0]               
+                product: arr[0],
+                addPro: {
+                    id: arr[0].id,
+                    classname: arr[0].classname,
+                    classify: arr[0].classify,
+                    imgsrc: arr[0].imgsrc,
+                    name: arr[0].name,
+                    price: arr[0].price,
+                    delprice: arr[0].delprice,
+                    author: arr[0].author,
+                    count: this.state.count,
+                    checked: true
+                }               
             })
         })
         .catch((error) => {
             console.log(error);
         });
     }
-
-    componentDidUpdate() {
-        this.setState ({
-            addPro: {
-                id: this.state.product.id,
-                classname: this.state.product.classname,
-                classify: this.state.product.classify,
-                imgsrc: this.state.product.imgsrc,
-                name: this.state.product.name,
-                price: this.state.product.price,
-                delprice: this.state.product.delprice,
-                author: this.state.product.author,
-                count: this.state.count,
-                ischeck: true
-            }
-        })
-    }
-
+    
     changeCount(e) {
         // console.log(e.target);
         if (e.target.name === 'minus') {

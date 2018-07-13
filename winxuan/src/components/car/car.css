@@ -61,10 +61,7 @@
     float: left;
      position:relative;
 }
- #car .main-head .form-checkbox input{
-     /*display:none;*/
-     /*z-index:20;*/
- }
+
 #car .form-checkbox i{
     display: block;
     position: absolute;
@@ -104,6 +101,7 @@
     line-height: 45px;
     position: relative;
     margin-left:60px;
+    text-align: left;
 }
 #car .txt i {
     color: #ddd;
@@ -176,6 +174,9 @@
     height:94px;
     background-color: #fff;
     padding:0;
+}
+.main-r{
+    text-align: left;
 }
 #car .img img{
     max-width: 100%;
@@ -262,15 +263,7 @@
     line-height:50px;
     text-align:center;
 }
-#car .bottom-total .right .bottom-cont>span{
-    /*display: inline-block;*/
-    /*padding: 7px 0;*/
-    /*overflow: hidden;*/
-    /*line-height:18px;*/
-    /*vertical-align: top;*/
-    /*width: 136px;*/
-    /*text-align: right;*/
-}
+
 #car .bottom-total .right .bottom-cont>span>i{
     text-decoration: none;
     color: #f41e33;
@@ -287,7 +280,10 @@
     float: left;
     font-size:14px;
     font-weight: bold;
-    color: #fff;
+    
     background-color: #f41e33;
     border: 0 none;
+}
+#car .bottom-total .right>p a{
+    color: #fff;
 }

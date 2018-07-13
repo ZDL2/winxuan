@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Fotter from '../footer/footer'
 import './car.css'
+// import {connect} from "react-redux";
 class Car extends Component {
   constructor(props){
     super(props);
@@ -8,9 +9,10 @@ class Car extends Component {
       goods:JSON.parse(localStorage.getItem('car'))||[],
       conter:2,
       checkedOne:false,
-      checkedAll:false,
+      checkedAll:true,
       totalPrice:0,
       checked:false,
+      goodsid:[]
     }
   }
   //加数量
@@ -33,7 +35,7 @@ class Car extends Component {
     var price=0;
       this.state.goods.forEach((item)=>{
         if(item.checked){
-          price=(item.price*item.cont)*1
+          price=(item.price*item.count)*1
           total+=price;
           this.setState({
             totalPrice:total
@@ -65,19 +67,19 @@ class Car extends Component {
     this.state.goods.forEach((item,idx)=>{
       if(i===idx){
         item.checked=!items.checked;
+          goodsidArr.forEach((ite)=>{
+            if(ite===items.id){
+              // console.log(2,items.id,ite,items)
+            }else{
+              goodsidArr.push(item.id)
+              isadd=false;
+            }
+          })
+          if(isadd){
+            console.log(1)
+            goodsidArr.push(item.id)
+          }
       }
-      // if(items.checked){
-      //   goodsidArr.filter((ite)=>{
-      //     if(items.id!==ite){
-      //       console.log(ite)
-      //       goodsidArr.push(items.id)
-      //       isadd=false;
-      //     }
-      //   })
-      //   if(isadd){
-      //     goodsidArr.push(items.id)
-      //   }
-      // }
     })
     checkAlls=this.state.goods.every((item)=>{
       if(items.checked===item.checked){
@@ -97,6 +99,9 @@ class Car extends Component {
     localStorage.setItem('goodsid',JSON.stringify(goodsidArr))
     this.totalPrice();
   }
+  // toSettle(){
+  //
+  // }
   render() {
     const checked=this.state
     return (
@@ -144,7 +149,7 @@ class Car extends Component {
                           </p>
                           <p className="conter">
                             <span onClick={this.min.bind(this,item,index)}>-</span>
-                            <input type="text" value={item.cont}/>
+                            <input type="text" value={item.count}/>
                             <span onClick={this.add.bind(this,item,index)}>+</span>
                           </p>
                         </div>
@@ -167,4 +172,5 @@ class Car extends Component {
     );
   }
 }
-export default Car;
+// export default Car;
+export default Car

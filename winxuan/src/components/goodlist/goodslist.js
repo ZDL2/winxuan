@@ -1,10 +1,9 @@
 import './goodlist.css'
 import React, {Component} from 'react'
-import { connect } from 'react-redux'
+// import { connect } from 'react-redux'
 import axios from 'axios'
 // import Get from '../../common'
 
-import Details from '../details/details'
 
 
 class Goodslist extends Component {
@@ -61,7 +60,7 @@ class Goodslist extends Component {
     return (
       <div id="goodslist">
         <div id="header">
-          <a href="javascript;:" className="goBack">
+          <a href="javascript:history.go(-1);" className="goBack">
            <span className="iconfont icon-jiantou">
            </span>
           </a>
@@ -69,7 +68,7 @@ class Goodslist extends Component {
             <input type="text" placeholder={this.state.toCatch}/>
             <span className="iconfont icon-sousuo"></span>
           </div>
-          <a href="javascript:;" className="toCar fr">
+          <a href="/car" className="toCar fr">
            <span className="iconfont icon-ziyuan">
            </span>
           </a>
@@ -139,9 +138,4 @@ class Goodslist extends Component {
   }
 }
 
-export default connect((state) => {
-  return state
-}, (dispatch) => {
-  return {
-  }
-})(Goodslist);
+export default Goodslist

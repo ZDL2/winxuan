@@ -29,7 +29,8 @@
     height: 30px;
     width: 100%;
     margin-bottom:10px;
-    font-size:18px;
+    font-size:14px;
+    padding-left: 10px;
 }
 #goodslist .header-search span{
     display: block;
@@ -118,10 +119,10 @@
     padding-left:15px;
  }
 #goodslist .main{
-  overflow:hidden;
+    padding: 0;
+    overflow:hidden;
     height: 582px;
     overflow-y:scroll;
-    /*overflow:hidden;*/
 }
 #goodslist .main-cont{
     padding: 3px 10px 3px 140px;
@@ -172,7 +173,6 @@
     overflow: hidden;
     font-size:20px;
     color: #f41e33;
-    vertical-align: middle;
 }
 #goodslist .price .price-n{
     font-size:13px;
@@ -212,9 +212,6 @@
     color: #262626;
     line-height:32px;
 }
-/*.pages input{*/
-    /*width:50%;*/
-/*}*/
 #goodslist .toTop>span{
     display:block;
     color:#fff;

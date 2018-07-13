@@ -12,41 +12,17 @@ import Mine from './page/mine/mine';
 import Favorite_footprint from './page/favorite_footprint/favorite_footprint';
 // drt
 import Goodslist from './components/goodlist/goodslist'
-import Details from './components/details/details'
 import Car from './components/car/car'
 import Settle from './components/settle/settle'
 
-import './assets/css/base.css';
-import './assets/font/iconfont.css';
+import './assent/css/base.css';
+import './assent/font/iconfont.css';
 import './App.css';
 import 'antd/dist/antd.css';
-
-import {Provider} from 'react-redux';
-import {createStore} from 'redux';
-
-const store = createStore((state = {
-  count: 1
-},action) => {
-  switch (action.type) {
-      case 'minus':
-      return Object.assign({}, state, {
-          count: action.count,
-      });
-      case 'addition':
-      return Object.assign({}, state, {
-          count: action.count,
-      });
-      
-      default:
-      return state
-  }
-});
-
 class App extends Component {
   render() {
     return (
       <Router>
-        <Provider store={store}>
           <div className="App clearfix">
           {/* zwy */}
             <Route exact path="/" component={Main}/>
@@ -54,16 +30,14 @@ class App extends Component {
             <Route path="/summer" component={Summer}></Route>
             <Route path="/login" component={Login}></Route>
             <Route path="/register" component={Register}></Route>
-            <Route path="/details/:classname/:proId" component={Details}></Route>
+            <Route path="/details" component={Details}></Route>
             <Route path="/mine" component={Mine}></Route>
             <Route path="/favorite" component={Favorite_footprint}></Route>
           {/* drt */}
             <Route exact path="/goodslist/:classify/:classess" component={Goodslist}></Route>
-            <Route path="/details/:tocatch/:bookid" component={Details}></Route>
             <Route path="/car" component={Car}></Route>
             <Route path="/settle" component={Settle}></Route>
           </div>
-        </Provider>
       </Router>
     );
   }
