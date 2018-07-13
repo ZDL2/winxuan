@@ -1,0 +1,129 @@
+.cont_box{
+    width: 100%;
+    position: relative;
+}
+.login_form{
+    width: 100%;
+}
+.error{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 23px;
+    font-size: 10px;
+    color: #f41e33;
+    background: #eee;
+}
+.hide{
+    display: none;
+}
+.input_box{
+    width: 100%;
+    height: 40px;
+    padding: 0 17px;
+    border-bottom: 1px solid #f1f1f1;
+    background: #fff;
+    position: relative;
+}
+.input_box input{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    padding-left: 30px;
+    border: none;
+    font-size: 14px;
+    color: #333;
+}
+.changeType{
+    width: 40px;
+    height: 22px;
+    position: absolute;
+    top: 9px;
+    right: 20px;;
+    z-index: 11;
+}
+.submit{
+    width: 100%;
+    height: 59px;;
+    padding: 23px 23px 0 23px;
+}
+.submit input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    background: #f41e33;
+    border-radius: 4px;
+}
+.form_end{
+    width: 100%;;
+    height: 34px;
+    line-height: 34px;
+    margin-top: 5px;
+    padding: 0 23px;
+}
+.form_end a{
+    display: inline-block;
+    font-size: 14px;
+}
+.form_end a:nth-of-type(1){
+    float: left;
+}
+.form_end a:nth-of-type(2){
+    float: right;
+}
+.other-login{
+    margin-top: 34px;
+    padding: 0 23px;
+}
+.other-login p{
+    font-size: 12px;
+    text-align: center;
+    color: #c9c9c9;
+    line-height: 34px;
+}
+.method{
+    width: 238px;
+    height: 43px;
+    margin: 0 auto;
+}
+.method a{
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin-left: 27px;
+}
+.method a:nth-of-type(1){
+    background: url('../../assets/images/xl.png') no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.method a:nth-of-type(2){
+    background: url('../../assets/images/qq.png') no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.service{
+    width: 100%;
+    height: 104px;
+    margin-top: 68px;
+    padding-bottom: 27px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.service div{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+.service div img{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+}
+.service div p{
+    font-size: 12px;
+    color: #c9c9c9;
+}

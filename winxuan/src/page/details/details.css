@@ -1,0 +1,91 @@
+
+.ant-tabs-nav-container{
+    text-align: center;
+}
+.ant-tabs-nav .ant-tabs-tab {
+    margin: 0;
+}
+.details_wrapper .back{
+    display: block;
+    width: 25px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 21px;
+    font-weight: 900;
+    color: #f41e33;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.details_wrapper .more_menu{
+    width: 30px;
+}
+
+
+/* 详情页底部 */
+.details_footer{
+    width: 100%;
+    height: 49px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: 9;
+}
+.links{
+    float: left;
+    width: 175px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.links a{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #5c6467;
+    position: relative;
+}
+.links a i{
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 5px;
+}
+.links a b{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 50%;
+    background: #f41e33;
+    font-size: 10px;
+    font-weight: normal;
+    color: #fff;
+}
+.btns {
+    width: 200px;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+.btn{
+    width: 50%;
+    height: 100%;
+    line-height: 49px;
+    text-align: center;
+    color: #fff;
+}
+.addCart{
+    background: #333;
+}
+.lijiBuy{
+    background: #f41e33;
+}
