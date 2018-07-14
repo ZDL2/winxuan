@@ -14,6 +14,7 @@ import Favorite_footprint from './page/favorite_footprint/favorite_footprint';
 import Goodslist from './components/goodlist/goodslist'
 import Car from './components/car/car'
 import Settle from './components/settle/settle'
+import Account from './components/account/account'
 
 import './assent/css/base.css';
 import './assent/font/iconfont.css';
@@ -37,6 +38,7 @@ class App extends Component {
             <Route exact path="/goodslist/:classify/:classess" component={Goodslist}></Route>
             <Route path="/car" component={Car}></Route>
             <Route path="/settle" component={Settle}></Route>
+            <Route path="/account" component={Account}></Route>
           </div>
       </Router>
     );

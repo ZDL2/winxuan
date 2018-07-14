@@ -9,7 +9,7 @@ class Car extends Component {
       goods:JSON.parse(localStorage.getItem('car'))||[],
       conter:2,
       checkedOne:false,
-      checkedAll:true,
+      checkedAll:false,
       totalPrice:0,
       checked:false,
       goodsid:[]
@@ -61,26 +61,29 @@ class Car extends Component {
   };
   //单选->全选
   checkOne(items,i) {
+    console.log(items.checked)
     var checkAlls;
     var goodsidArr=JSON.parse(localStorage.getItem("goodsid"))||[];
     var isadd=true;
     this.state.goods.forEach((item,idx)=>{
       if(i===idx){
         item.checked=!items.checked;
-          goodsidArr.forEach((ite)=>{
-            if(ite===items.id){
-              // console.log(2,items.id,ite,items)
-            }else{
-              goodsidArr.push(item.id)
-              isadd=false;
-            }
-          })
-          if(isadd){
-            console.log(1)
-            goodsidArr.push(item.id)
-          }
       }
     })
+      if(!items.checked){
+        goodsidArr.forEach((ite,idx)=>{
+          if(ite===items.id){
+            isadd=false;
+            goodsidArr.splice(idx,1)
+          }
+        })
+      }
+        if(isadd){
+        goodsidArr.push(items.id)
+        }
+      else if(!isadd){
+
+        }
     checkAlls=this.state.goods.every((item)=>{
       if(items.checked===item.checked){
         return item.checked;
@@ -108,7 +111,7 @@ class Car extends Component {
       <div id="car">
         <div className="header">
           <div className="header-cont">
-            <a href="#" className="goBack">
+            <a href="javascript:history.go(-1);" className="goBack">
               <span className="iconfont icon-jiantou"></span>
             </a>
             <h3>购物车({this.state.goods.length})</h3>
@@ -129,7 +132,7 @@ class Car extends Component {
           </div>
           <ul>
             {this.state.goods.map((item,index)=>{
-                return <li key={index}>
+                return <li >
                           <div className="main-box">
                     <label className="form-checkbox">
                       <input type="checkbox" checked={item.checked} onClick={this.checkOne.bind(this,item,index)} data-check={item.checked}/>

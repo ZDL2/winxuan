@@ -5,26 +5,27 @@ class Settle extends Component{
   constructor(props){
     super(props)
     this.state={
-      goods:[],
+      goods:JSON.parse(localStorage.getItem('car'))||[],
+      goodsid:JSON.parse(localStorage.getItem('goodsid')),
+      idx:0,
+      address:JSON.parse(localStorage.getItem('person'))||[],
     }
   };
   totalPrice(){
-    // this.state.goods.map((item)=>{
-    //
-    // })
   }
   componentDidMount(){
-    console.log(JSON.parse(localStorage.getItem("goodsid")))
-
     var goodslist=JSON.parse(localStorage.getItem('car'));
-    console.log(goodslist)
+    this.setState({
+      address: JSON.parse(localStorage.getItem('person')) || []
+    })
+
   }
   render(){
     return (
         <div className="settle">
           <div className="header shadow">
             <div className="header-box">
-              <a href="#"><i className="iconfont icon-jiantou"></i></a>
+              <a href="javascript:history.go(-1);"><i className="iconfont icon-jiantou"></i></a>
               <div className="header-cont">
                 <h3>确认订单</h3>
               </div>
@@ -33,7 +34,20 @@ class Settle extends Component{
           <div className="settle-main">
             <div className="settle-main-addr">
               <a href="#">
-                <span>请新建收货地址以确保商品顺利到达</span>
+                {(()=>{
+                  if(this.state.address.length>0){
+                    return this.state.address.map((item)=>{
+                      var idx=this.state.address.length-1;
+                      return <div className="person">
+                        <p className="uname">姓名：<span>{this.state.address[idx].name}</span>电话: <span>{this.state.address[idx].tel}</span></p>
+                        <p className="uaddr">地址: <span>{this.state.address[idx].address}</span></p>
+                      </div>
+                    })
+                  }else{
+                    return <span>请创建新的收货地址</span>
+                  }
+                })()
+                }
                 <s className="xiaotubiao"><i className="iconfont icon-jiantouyou"></i></s>
               </a>
             </div>
@@ -87,21 +101,28 @@ class Settle extends Component{
                 <span>共{0}件商品</span>
               </h4>
               <ul>
-                <li>
-                  <div className="item item-7">
-                    <a href="#" title="">
-                      <div className="img">
-                        <img src="//img3.winxuancdn.com/6287/11146287_9.jpg?1515046400953&amp;imageMogr2/thumbnail/160x160"/>
-                      </div>
-                      <h3 className="title">发现建筑小型可移动建筑</h3>
-                      <div className="price">
-															<span className="price-n">￥32.40</span></div>
-                      <div className="num">
-                        <span>X{1}</span>
-                      </div>
-                    </a>
-                  </div>
-                </li>
+                {this.state.goods.map((item,idx)=>{
+                  return this.state.goodsid.map((ids)=>{
+                    if(item.id===ids){
+                      return  <li key={item.name+Math.random()*1}>
+                        <div className="item item-7">
+                          <a href="#" title="">
+                            <div className="img">
+                              <img src={item.imgsrc}/>
+                            </div>
+                            <h3 className="title">{item.name}</h3>
+                            <div className="price">
+                              <span className="price-n">￥{item.price}</span></div>
+                            <div className="num">
+                              <span>X{item.count}</span>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                    }
+                  })
+                })
+                }
               </ul>
             </div>
             <div className="total shadow-2">
