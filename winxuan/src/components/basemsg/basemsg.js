@@ -31,7 +31,7 @@ class Basemsg extends Component {
                     delprice: arr[0].delprice,
                     author: arr[0].author,
                     count: this.state.count,
-                    checked: true
+                    checked: false
                 }               
             })
         })
