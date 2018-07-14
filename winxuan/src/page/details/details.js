@@ -59,7 +59,7 @@ class Details extends Component {
                             <i className="iconfont icon-aixin"></i>
                             <span>{this.state.isFavorite}</span>
                         </a>
-                        <a href="/">
+                        <a href="/car">
                             <i className="iconfont icon-ziyuan"></i>
                             <span>购物车</span>
                             <b className="count">{this.state.cartCount}</b>

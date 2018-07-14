@@ -1,0 +1,62 @@
+.more_menu{
+    width: 65px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+}
+.moreBtn{
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+    text-align: center;
+    
+}
+.moreBtn i{
+    font-size: 24px;
+    font-weight: 900;
+    color: #999;
+}
+.mmenu_list{
+    width: 124px;
+    height: 143px;
+    border-radius: 4px;
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    transition: all linear .5s;
+}
+.mmenu_list>i{
+    display: block;
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    border-right: 5px solid rgba(255,255,255,0);
+    border-left: 5px solid rgba(255,255,255,0);
+    border-bottom: 5px solid rgba(0,0,0,.7);
+
+}
+.mmenu_list li{
+    width: 85%;
+    height: 47px;
+    margin: 0 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.mmenu_list li a{
+    display: block;
+    line-height: 47px;
+    padding-left: 30px;
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+}
+.mmenu_list li a i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(255,255,255,0.5);
+}

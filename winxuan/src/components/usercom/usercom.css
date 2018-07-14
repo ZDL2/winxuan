@@ -1,0 +1,44 @@
+.usercom{
+    width: 100%;
+    min-height: 575px;
+    margin-top: -16px;
+    background: #eee;
+}
+.comment{
+    width: 100%;
+    min-height: 312px;
+    position: relative;
+}
+.empty_comment{
+    width: 155px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.empty_comment i{
+    display: block;
+    width: 132px;
+    height: 132px;
+    line-height: 132px;
+    text-align: center;
+    margin: 0 auto;
+    background: #ccc;
+    font-size: 80px;
+    font-weight: 900;
+    color: #fff;
+    border-radius: 50%;
+}
+.empty_comment h3{
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.empty_comment h4{
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}

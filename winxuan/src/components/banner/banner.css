@@ -1,0 +1,26 @@
+.banner {
+  height: 178px;
+}
+
+.banner a img {
+  height: 178px;
+}
+
+.ant-carousel ul.slick-dots li button {
+  display: inline-block;
+  margin: 0 2px;
+  vertical-align: top;
+  width: 8px ;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.8;
+  border: 1px solid rgba(0,0,0,0.5);
+  background-color: #fff;
+}
+
+.ant-carousel ul.slick-dots li.slick-active button {
+  width: 8px ;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ce1d38;
+}

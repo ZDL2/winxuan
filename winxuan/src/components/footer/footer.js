@@ -15,12 +15,12 @@ class Footer extends Component {
             <i className="iconfont icon-sousuo1"></i>
             <span>分类搜索</span>
           </Link>
-          <a href="#/car">
+          <a href="/car">
             <i className="iconfont icon-ziyuan"></i>
             <span>购物车</span>
           </a>
-          <a href="#">
-            <i className="iconfont icon-ren"></i>
+          <a href="/mine">
+            <i className="iconfont icon-wode"></i>
             <span>我的文轩</span>
           </a>
         </div>

@@ -1,0 +1,129 @@
+.summer {
+  padding-top: 44px;
+  background-color: #eee;
+}
+
+.summer .head {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+.summer .head-box {
+  position: relative;
+  overflow: hidden;
+  height: 44px;
+  padding: 0 58px;
+  background-color: #fafafa;
+}
+
+.summer .head-box .back {
+  display: block;
+  width: 58px;
+  height: 44px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  color: #f41e33;
+}
+
+.summer .head-box .cont h2 {
+  line-height: 44px;
+  font-size: 16px;
+  color: #262626;
+  text-align: center;
+}
+
+.summer .slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.summer .slider a {
+  display: block;
+}
+
+.summer .slider img {
+  width: 100%;
+  max-height: 178px;
+  display: block;
+}
+
+.summer .spynav {
+  z-index: 1000;
+  position: relative;
+}
+
+.summer .spynav .placeholder {
+  height: 37px;
+  margin: 0px;
+}
+
+.summer .spynav .placeholder .cont {
+  overflow-x: scroll;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.summer .spynav .placeholder ul {
+  display: block;
+  margin-top: -1px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.summer .spynav .placeholder ul li {
+  float: left;
+  width: 82px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.summer .spynav .placeholder ul li a {
+  display: block;
+  padding: 11px 0;
+  font-size: 14px;
+  color: #262626;
+  line-height: 14px;
+}
+
+.summer .spynav .placeholder ul li .active {
+  color: #f41e33;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #f41e33;
+}
+
+.summer .spynav .placeholder .more {
+  display: block;
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  top: 0;
+  right: 0;
+  text-align: center;
+  border: 0 none;
+  background-color: #fff;
+  box-shadow: -1px 0 1px rgba(0,0,0,0.07);
+  padding: 0;
+  z-index: 1000;
+}
+
+.summer .spynav .placeholder .more span {
+  display: block;
+  width: 37px;
+  height: 37px;
+  vertical-align: top;
+  line-height: 37px;
+  font-size: 14px;
+  color: #f41e33;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  background-color: #fff;
+}
+
+

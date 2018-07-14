@@ -97,15 +97,15 @@ class Login extends Component {
                     </div>
                     <div className="service">
                         <div>
-                            <img src={require('../../assets/images/service_01.jpg')}/>
+                            <img src={require('../../assent/images/service_01.jpg')}/>
                             <p>100%正品保证</p>
                         </div>
                         <div>
-                            <img src={require('../../assets/images/service_02.jpg')}/>
+                            <img src={require('../../assent/images/service_02.jpg')}/>
                             <p>7天无理由退了货</p>
                         </div>
                         <div>
-                            <img src={require('../../assets/images/service_03.jpg')}/>
+                            <img src={require('../../assent/images/service_03.jpg')}/>
                             <p>多仓直发快速配货</p>
                         </div>
                     </div>

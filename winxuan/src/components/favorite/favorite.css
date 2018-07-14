@@ -1,0 +1,71 @@
+.favorite_wrapper{
+    width: 100%;
+    min-height: 622px;
+    background: #eee;
+    margin-top: -16px;
+}
+.fav_list{
+    width: 100%;
+    background: #fff;
+    height: auto;
+}
+.fav_list li{
+    width: 100%;
+    height: 130px;
+    padding: 5px 10px 5px 140px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+.fav_list li .fav_img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+}
+.fav_list li .fav_img a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.fav_list li .fav_img a img{
+    width: 100%;
+    height: 100%;
+}
+.fav_name{
+    width: 100%;
+    padding: 10px 0;
+    line-height: 18px;
+    
+}
+.fav_name a{
+    font-size: 14px;
+    color: #666;
+}
+.fav_price{
+    width: 100%;
+    padding-top: 64px;
+    position: relative;
+
+}
+.f_price{
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    font-size: 20px;
+    color: #f41e33;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+.del_fav{
+    width: 78px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

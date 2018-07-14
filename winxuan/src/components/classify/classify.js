@@ -26,7 +26,7 @@ class Classify extends Component {
       <div className="classify">
         <div className="search-bar">
           <div className="search-box">
-            <a href="#" className="back">
+            <a href="javascript:history.go(-1);" className="back">
               <i className="iconfont icon-jiantou"></i>
             </a>
             <div className="bar">
